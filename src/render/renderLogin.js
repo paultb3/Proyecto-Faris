@@ -1,4 +1,5 @@
 
+
 export const renderModal = (element) => {
     const html = `
         <form class="modal-content animate" action="/action_page.php">
