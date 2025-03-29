@@ -18,5 +18,4 @@ document.querySelector('#app').innerHTML = `
     </p>
   </div>
 `
-
 modalStart('.card')
