@@ -1,24 +1,20 @@
 import './style.css'
 import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { nameHTML } from './render/first'
+import unasLogo from './unasLogo.svg'
+
 import { modalStart } from './render/modal'
 
 
 document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
+    <a href="https://portalweb.unas.edu.pe/" target="_blank">
+      <img src="${unasLogo}" class="logo vanilla" alt="JavaScript logo" />
     </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
+    <h1>UNAS</h1>
     <div class="card">
           
     </div>
     <p class="read-the-docs">
-      Click on the Vite logo to learn more
+      Sistema "X" Universidad Agraria de la Selva
     </p>
   </div>
 `
