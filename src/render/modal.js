@@ -8,12 +8,13 @@ export const modalStart = (elementbyId) => {
         const divModal = document.createElement('div');
         
         button.id = 'openModal';
-        button.innerText = 'Login';
+        button.innerText = 'Ingresar';
         divModal.className = 'modal';
         renderModal(divModal);  
 
         button.addEventListener('click', () => {
-                divModal.style.display = 'block';
+                divModal.style.display = 'flex';
+                divModal.style.justifyContent = 'space-between'
         })
         document.body.appendChild(divModal);
         element.append(button);
