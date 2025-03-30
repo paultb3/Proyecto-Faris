@@ -15,9 +15,12 @@ export const renderModal = (element) => {
             <button type="submit">Login</button>
             <label>
                 <input type="checkbox" checked="checked" name="remember"> Remember me
-            </label>
+            </label>           
         </div>
     </form>
-    `;
+    <div class="contain-register">
+            <a href="#" id="register-link">Register</a>
+    </div>
+    `; 
     element.innerHTML = html;
 }

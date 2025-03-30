@@ -19,6 +19,27 @@
   /* Centrar en el eje vertical */
 }
 
+.contain-register {
+  margin-top: 30px;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  padding: 20px;
+  background: rgba(0, 0, 0, .9);
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: row;
+  /* Elementos en fila */
+  justify-content: space-between;
+  /* Espacio entre elementos */
+  align-items: center;
+  /* Centrar en el eje vertical */
+}
+
 /* Modal Content/Box */
 
 

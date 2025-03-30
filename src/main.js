@@ -11,7 +11,6 @@ document.querySelector('#app').innerHTML = `
     </a>
     <h1>UNAS</h1>
     <div class="card">
-          
     </div>
     <p class="read-the-docs">
       Sistema "X" Universidad Agraria de la Selva

@@ -1,5 +1,6 @@
 import { renderModal } from "./renderLogin";
 import '../styleModal.css';
+import { renderRegister } from "./renderRegister";
 
 export const modalStart = (elementbyId) => {
 
@@ -14,7 +15,6 @@ export const modalStart = (elementbyId) => {
 
         button.addEventListener('click', () => {
                 divModal.style.display = 'flex';
-                divModal.style.justifyContent = 'space-between'
         })
         document.body.appendChild(divModal);
         element.append(button);
@@ -28,6 +28,17 @@ export const modalStart = (elementbyId) => {
                 if (event.target === divModal) {
                         divModal.style.display = 'none';
                 }
+        })
+
+        const registerLink = document.querySelector('#register-link')
+
+        
+        registerLink.addEventListener('click', (event) => {
+                event.preventDefault();
+                divModal.style.display = 'none'
+                button.innerText = 'Registrarse'
+                button.style.backgroundColor = 'red'
+                renderRegister(divModal)
         })
 
 }
