@@ -13,7 +13,7 @@ document.querySelector('#app').innerHTML = `
     <div class="card">
     </div>
     <p class="read-the-docs">
-      Sistema "X" Universidad Agraria de la Selva
+      Sistema Academico Universidad Agraria de la Selva
     </p>
   </div>
 `
