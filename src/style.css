@@ -15,6 +15,7 @@
   margin: 0;
 }
 
+
 .cabezera {
   display: flex;
   justify-content: space-between;
@@ -23,7 +24,7 @@
   width: 100%;
   background-color: #ffff;
   color: black;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 25px;
   margin-bottom: 60px;
 }
@@ -34,7 +35,6 @@
 
 #app {
   width: 500px;
-  ;
   padding: 10px;
 }
 
@@ -42,7 +42,7 @@
   margin: auto 10px;
   width: 150px;
   font-size: 16px;
-  background-color: #00BFFF;
+  background-color: #00bfff;
   color: #ffff;
 }
 
@@ -62,7 +62,7 @@ body {
   display: block;
   place-items: center;
   min-width: 320px;
-  min-height: 100v
+  min-height: 100v;
 }
 
 h1 {
