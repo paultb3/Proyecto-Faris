@@ -7,7 +7,7 @@
   transform: translate(-50%, -50%);
   width: 500px;
   padding: 20px;
-  background: rgba(0, 0, 0, .9);
+  background: rgba(0, 0, 0, 0.9);
   border-radius: 12px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
   display: flex;
@@ -20,32 +20,42 @@
 }
 
 .contain-register {
-  margin-top: 30px;
-  display: none;
+  margin-top: 2px;
   position: fixed;
-  top: 50%;
-  left: 50%;
+  top: 80vh;
+  left: 270px;
   transform: translate(-50%, -50%);
-  width: 500px;
-  padding: 20px;
-  background: rgba(0, 0, 0, .9);
+  width: 100px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.9);
   border-radius: 12px;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
   display: flex;
-  flex-direction: row;
-  /* Elementos en fila */
-  justify-content: space-between;
-  /* Espacio entre elementos */
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  /* Centrar en el eje vertical */
+  z-index: 1000;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Añadir efecto hover */
+.contain-register:hover {
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.6);
+  transform: translate(-50%, -50%) scale(1.02);
+}
+
+/* Añadir media query para responsividad */
+@media screen and (max-width: 600px) {
+  .contain-register {
+    width: 90%;
+    padding: 20px;
+  }
 }
 
 /* Modal Content/Box */
 
-
 /* The Close Button */
 .close {
-
   color: red;
   font-size: 30px;
   font-weight: bold;
@@ -63,37 +73,37 @@
 /* Add Zoom Animation */
 .animate {
   -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.6s
+  animation: animatezoom 0.6s;
 }
 
 @-webkit-keyframes animatezoom {
   from {
-    -webkit-transform: scale(0)
+    -webkit-transform: scale(0);
   }
 
   to {
-    -webkit-transform: scale(1)
+    -webkit-transform: scale(1);
   }
 }
 
 @keyframes animatezoom {
   from {
-    transform: scale(0)
+    transform: scale(0);
   }
 
   to {
-    transform: scale(1)
+    transform: scale(1);
   }
 }
 
 form {
   border-radius: 8px;
-  border: .5px solid #f1f1f1;
+  border: 0.5px solid #f1f1f1;
 }
 
 /* Full-width inputs */
-input[type=text],
-input[type=password] {
+input[type="text"],
+input[type="password"] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -104,7 +114,7 @@ input[type=password] {
 
 /* Set a style for all buttons */
 button {
-  background-color: #04AA6D;
+  background-color: #04aa6d;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
